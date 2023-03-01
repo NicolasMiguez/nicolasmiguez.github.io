@@ -99,7 +99,12 @@ footer i {
 
 #carga .card {
     width: 90vw;
-    height: 65vh;
+}
+
+#validacionTitulo {
+    padding-left: 10px;
+    color: #dc3545;
+    font-size: 14px;
 }
 
 .prioridades ul {
@@ -159,6 +164,7 @@ footer i {
     justify-content: center;
     align-items: center;
     font-size: 22px;
+    margin: 5px;
 }
 
 .acciones {
