@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/css.css">
+
+    <script src="https://kit.fontawesome.com/7323c7286f.js" crossorigin="anonymous"></script>
+
+    <title>To do List</title>
+</head>
+
+<body>
+    <div id="carga">
+        <form class="needs-validation" novalidate>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row titulo">
+                        <div class="col-10">
+                            <p>Igresar tarea</p>
+                        </div>
+                        <div class="col-2 centrado"><i id="cruzCarga" class="fa-solid fa-circle-xmark"></i></div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="cargaTitulo" required>
+                        <label for="floatingInput">Título</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="cargaTipo">
+                            <option selected value="1">Personal</option>
+                            <option value="2">Domestica</option>
+                            <option value="3">Entretenimiento</option>
+                            <option value="4">Trabajo</option>
+                        </select>
+                        <label for="floatingSelect">Tipo de tarea</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="cargaDescripcion"
+                            style="height: 100px" required></textarea>
+                        <label for="floatingTextarea2">Descripción</label>
+                    </div>
+                    <div class="prioridades">
+                        <label for="exampleInputEmail1" class="form-label">Prioridad</label>
+                        <ul>
+                            <li id="prioridad1" class="prioridad1 prioridad_activo"></li>
+                            <li id="prioridad2" class="prioridad2"></li>
+                            <li id="prioridad3" class="prioridad3"></li>
+                            <li id="prioridad4" class="prioridad4"></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button id="cancelarCarga" class="btn btn-outline-secondary me-2"
+                            type="button">Cancelar</button>
+                        <button id="aceptarCarga" class="btn btn-primary" type="button">Crear</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="container d-flex flex-column">
+        <header class="row">
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+            <div class="col-8">To do List</div>
+            <div class="col-2"><i class="fa-regular fa-user"></i></div>
+        </header>
+
+        <section class="row">
+
+            <div id="vacio">
+                <div class="centrado">
+                    <p>No tenes tareas pendientes</p>
+                    <p><i id="masGrande" class="fa-sharp fa-solid fa-circle-plus"></i></p>
+                    <p>Agregar tarea</p>
+                </div>
+            </div>
+
+            <div id="listado" class="d-block">
+                <!--div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-2 tipo_tarea prioridad4"><i class="fa-solid fa-house"></i></div>
+                            <div class="col-8">
+                                <p class="tit">Título</p>
+                                <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry</p>
+                            </div>
+                            <div class="col-1"><i class="fa-regular fa-square"></i></div>
+                            <div class="col-1"><i class="fa-solid fa-trash"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-2 tipo_tarea prioridad2"><i class="fa-solid fa-user"></i></div>
+                            <div class="col-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            </div>
+                            <div class="col-1"><i class="fa-regular fa-square"></i></div>
+                            <div class="col-1"><i class="fa-solid fa-trash"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-2 tipo_tarea prioridad3"><i class="fa-solid fa-gamepad"></i></div>
+                            <div class="col-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            </div>
+                            <div class="col-1"><i class="fa-regular fa-square-check"></i></div>
+                            <div class="col-1"><i class="fa-solid fa-trash"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-2 tipo_tarea prioridad1"><i class="fa-solid fa-briefcase"></i></div>
+                            <div class="col-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            </div>
+                            <div class="col-1"><i class="fa-regular fa-square"></i></div>
+                            <div class="col-1"><i class="fa-solid fa-trash"></i></div>
+                        </div>
+                    </div>
+                </div-->
+            </div>
+        </section>
+
+        <footer class="row align-items-center">
+            <i id="btnAgregar" class="fa-sharp fa-solid fa-circle-plus"></i>
+        </footer>
+
+        <script src="js/js.js"></script>
+    </div>
+</body>
+
+</html>
