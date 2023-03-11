@@ -108,6 +108,9 @@ cruzCarga.addEventListener("click", () => {
 cancelarCarga.addEventListener("click", () => {
   cerrarCarga();
   blanquearForm();
+  cargaTitulo.classList.remove("is-invalid");
+  validacionTitulo.classList.remove("d-flex");
+  validacionTitulo.classList.add("d-none");
 });
 
 aceptarCarga.addEventListener("click", () => {
@@ -194,3 +197,10 @@ cargaTitulo.addEventListener("focus", () => {
 //   tarea0.remove();
 // });
 //trash.addEventListener("click", () => {});
+
+// Maca — hoy a las 20:50
+// creo que lo del required funciona cuando el button es de tipo submit, y en ese caso recarga la página
+// NicoM — hoy a las 20:51
+// ahhh piola, voy a probar
+// amti — hoy a las 20:51
+// pero para que no se recargue la pagina usamos preventDefault()
