@@ -1,5 +1,6 @@
 body {
     color: #666666;
+    background: #f9f9f9;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -46,6 +47,25 @@ section h3 {
     text-align: center;
 }
 
+#listado .card {
+    margin-top: 5px;
+}
+
+.matchSi {
+    border-left: 10px solid #BDE085;
+    --bs-card-spacer-y: 0;
+}
+
+.matchNo {
+    border-left: 10px solid #EF9AC0;
+    --bs-card-spacer-y: 0;
+}
+
+.matchNo p,
+.matchSi p {
+    margin: 10px;
+}
+
 .botonTirar {
     margin-top: 10px;
 }
@@ -70,7 +90,7 @@ section h3 {
 .botonera {
     position: fixed;
     bottom: 10px;
-    width: 100vw;
+    width: 93%;
     display: flex;
     justify-content: center;
 }
@@ -89,7 +109,12 @@ section h3 {
     height: 20px;
     width: 20px;
     border-radius: 100%;
-    background-color: #8B83F2;
+    background-color: #BDE085;
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+    background-color: #627740;
 }
 
 .carousel-control-prev-icon {
@@ -106,6 +131,12 @@ section h3 {
     position: fixed;
     bottom: 240px;
     opacity: 1;
+}
+
+.separador {
+    font-weight: bold;
+    padding-top: 3px;
+    margin: 0px 20px;
 }
 
 .resumen div,
@@ -130,12 +161,8 @@ section h3 {
     width: 140px;
 }
 
-
-/*Prueba*/
-.prueba {
-    background-color: rgba(255, 0, 0, 50%);
-    z-index: 999999;
-    position: absolute;
+#queCarta {
+    font-size: 16px;
 }
 
 
