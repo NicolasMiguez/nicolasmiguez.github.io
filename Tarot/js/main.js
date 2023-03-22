@@ -219,10 +219,10 @@ verResultado.addEventListener("click", () => {
     (valorJugador1 < 0 && valorJugador2 < 0) ||
     (valorJugador1 > 0 && valorJugador2 > 0)
   ) {
-    resultado.innerHTML = `<img src="img/match_si.svg" alt=""></img>`;
+    resultado.innerHTML = `<img src="img/Match_si.svg" alt=""></img>`;
     matchearon = "Si";
   } else {
-    resultado.innerHTML = `<img src="img/match_no.svg" alt=""></img>`;
+    resultado.innerHTML = `<img src="img/Match_no.svg" alt=""></img>`;
     matchearon = "No";
   }
 
@@ -371,9 +371,9 @@ if (localStorage.getItem("partidasGuardadas")) {
 function verResumen(partida) {
   console.log("no pude recuperar para mostrar el resumen de la partida");
   if (partida[4] == "Si") {
-    resultado.innerHTML = `<img src="img/match_si.svg" alt=""></img>`;
+    resultado.innerHTML = `<img src="img/Match_si.svg" alt=""></img>`;
   } else {
-    resultado.innerHTML = `<img src="img/match_no.svg" alt=""></img>`;
+    resultado.innerHTML = `<img src="img/Match_no.svg" alt=""></img>`;
   }
 
   var modeloResumen = `
