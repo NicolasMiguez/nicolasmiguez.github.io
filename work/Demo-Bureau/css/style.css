@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #444444;
+    background-color: #e7392e;
+}
+
+.bg_right img,
+.bg_left img {
+    height: 100vh;
+}
+
+.bg_right {
+    position: fixed;
+    z-index: -999;
+    right: 0;
+    top: 0;
+}
+
+.bg_left {
+    position: fixed;
+    z-index: -990;
+    left: 0;
+    top: 0;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+}
+
+.header1 {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #ececec;
+    border-bottom: none;
+    padding: 20px;
+    border-radius: 5px 5px 0px 0px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 28px;
+    flex-grow: 1;
+    text-align: center;
+    color: #e7392e;
+}
+
+nav {
+    border-radius: 0px 0px 5px 5px;
+    background-color: #ececec;
+    height: 35px;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    margin: auto 0;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+nav a,
+nav a:link,
+nav a:visited,
+nav a:active {
+    color: #444444;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e7392e;
+}
+
+.cuenta {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuenta :first-child {
+    padding: 5px;
+}
+
+.cuenta i {
+    font-size: 30px;
+    color: #14b6c1;
+}
+
+section {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #14b6c1;
+    border-color: #CCCCCC;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    color: #FFFFFF;
+    background-color: #14b6c1;
+    border-color: #444444;
+    /*set the color you want here*/
+}
+
+footer {
+    background-color: rgba(231, 57, 46, 0.8);
+    border: 2px solid #e7392e;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.colores {
+    celeste: #14b6c1;
+    verde: #82c04a;
+    rojo: #e7392e;
+    amarillo: #ffc706;
+    naranja: #f59533;
+    violeta: #844992;
+}
+*/
